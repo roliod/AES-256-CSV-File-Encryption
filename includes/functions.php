@@ -44,6 +44,10 @@ function encrypt_file($value, $iv, $key, $cipher, $filename, $serialize = true)
 
     $timestamp = strtotime(date('d-m-y H:i:s'));
 
+    if (!is_dir('files')) {
+        mkdir('files');
+    }
+
     return file_put_contents('files/'.$timestamp. '_encrypted.csv', $encrypted_content);
 }
 

@@ -55,7 +55,7 @@
             <div class="col-xs-12">
               <div class="bs-callout bs-callout-warning">
                 <h4>Please Note</h4>
-                Encrypted files are saved in the 'files' Folder
+                Encrypted and Decrypted files are saved in the 'files' Folder
               </div>
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -71,10 +71,18 @@
                                 <p class="help-block"> <?php if (isset($done)) { echo $done; }?></p>
                             </div>
                             <div class="form-group ">
+                                <label for="type" class="control-label required">Type</label>
+                                <select class="form-control" name="type" required/>
+                                  <option value=""> Select Type </option>
+                                  <option value="encrypt"> Encrypt </option>
+                                  <option value="dencrypt"> Decrypt </option>
+                                </select>
+                            </div>
+                            <div class="form-group ">
                                 <label for="enc_key" class="control-label required">Encyrption Key</label>
                                 <input class="form-control" name="enc_key" type="text" required>
                             </div>
-                            <input class="btn btn-primary btn-lg btn-flat" type="submit" value="Encrypt batch">
+                            <input class="btn btn-primary btn-lg btn-flat" type="submit" value="Shoot">
                         </form>
                     </div>
                 </div>

@@ -94,7 +94,7 @@
       <!-- footer-->
       <footer class="main-footer">
         <div class="text-center hidden-xs">
-          <strong>Copyright &copy; <?= date('Y'); ?> <a href="#" target="_blank">Soft Alliance</a>.</strong>
+          <strong>Copyright &copy; <?= date('Y'); ?> <a href="#">My Company</a>.</strong>
           All rights reserved.
         </div>
       </footer>
